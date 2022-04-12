@@ -1,2 +1,6 @@
 ---
 # tasks file for prodsrv
+ - name: install packages
+   apt: pkg= {{ item }} state=present update_cache=yes
+   with_items:
+       - tomcat9
