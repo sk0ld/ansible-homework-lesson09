@@ -5,3 +5,13 @@
    with_items:
        - git
        - maven
+
+ - name: Clone a github repository
+   git:
+    repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
+    dest: /usr/share/app-src
+    clone: yes
+    update: yes
+
+ - name: Maven package create
+   command: mvn -f /usr/share/app-src/pom.xml package -DskipTest
