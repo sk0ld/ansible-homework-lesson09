@@ -1,8 +1,7 @@
 ---
 # tasks file for devsrv
-- name: install packages
-  apt: pkg= {{ item }} state=present 
-  with_items:
+ - name: install packages
+   apt: pkg= {{ item }} state=present update_cache=yes
+   with_items:
        - git
        - maven
-  update_cache: yes
