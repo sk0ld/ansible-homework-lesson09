@@ -1,2 +1,4 @@
 ---
 # defaults file for devsrv
+app_repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
+app_folder: /usr/share/app-src

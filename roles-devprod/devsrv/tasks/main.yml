@@ -8,10 +8,10 @@
 
  - name: Clone a github repository
    git:
-    repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
-    dest: /usr/share/app-src
+    repo: {{ app_repo }}
+    dest: {{ app_folder }}
     clone: yes
     update: yes
 
  - name: Maven package create
-   command: mvn -f /usr/share/app-src/pom.xml package -DskipTest
+   command: mvn -f {{ app_folder }}/pom.xml package -DskipTest
