@@ -23,9 +23,11 @@ ansible-playbook /path-to/roles-devprod/roles-devprod.yml
 Example of /etc/ansible/hosts
 -----------------------------
 
-
+```
 [dev]
 devserver1 ansible_host=your_ip_or_fqdn_devserver1
 
 [prod]
 prodserver1 ansible_host=your_ip_or_fqdn_prodserver1
+
+```
