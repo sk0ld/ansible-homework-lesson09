@@ -1,10 +1,10 @@
 ---
 # tasks file for prodsrv
  - name: install packages
-   apt: pkg= {{ item }} state=present update_cache=yes
+   apt: pkg={{ item }} state=present update_cache=yes
    with_items:
-       - tomcat9
-  
+     - tomcat9
+
  - name: transfer war file from dev
    synchronize:
     src: "{{ src_folder }}/{{ src_file }}"
