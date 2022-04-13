@@ -4,9 +4,11 @@ It's a very simple example of ansible roles usage
 Short info
 ------------
 
-Tested on Ubuntu 20.04 .
-dev host is for preparation of war file with maven.
-prod host is for publishing war file by tomcat.
+Tested on Ubuntu 20.04
+
+dev host is for preparation of war file with maven
+
+prod host is for publishing war file by tomcat
 
 Requirements
 ------------
