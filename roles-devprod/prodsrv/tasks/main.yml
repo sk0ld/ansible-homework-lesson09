@@ -13,5 +13,4 @@
     src: "{{ src_folder }}/{{ src_file }}"
     dest: "{{ dest_folder }}"
    delegate_to: "{{ src_server }}"
-   notify: start tomcat9
-     
+   notify: start tomcat9  
