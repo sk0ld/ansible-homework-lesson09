@@ -5,6 +5,7 @@
      name:
       - git
       - maven
+      - rsync
      state: present
      update_cache: yes
  

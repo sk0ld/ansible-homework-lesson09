@@ -4,6 +4,7 @@
    apt:
      name:
       - tomcat9
+      - rsync
      state: present
      update_cache: yes
 
