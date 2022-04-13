@@ -6,7 +6,7 @@
        - tomcat9
 
  - name: Ensure tomcat9 is running
-    ansible.builtin.service:
+   ansible.builtin.service:
       name: tomcat9
       state: started
    notify: start tomcat9 
