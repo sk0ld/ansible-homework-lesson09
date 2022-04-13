@@ -1,6 +1,6 @@
 ---
 # defaults file for prodsrv
-src_folder: /usr/share/app-src/target/
+src_folder: /usr/share/app-src/target
 src_file: hello-1.0.war
 src_server: devserver1
 dest_folder: /var/lib/tomcat9/webapps/
