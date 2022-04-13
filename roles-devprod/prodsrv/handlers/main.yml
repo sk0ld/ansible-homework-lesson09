@@ -1,2 +1,7 @@
 ---
 # handlers file for prodsrv
+ handlers:
+    - name:  start tomcat9
+      ansible.builtin.service:
+        name: tomcat9
+        state: started
