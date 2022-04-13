@@ -7,7 +7,7 @@
   
  - name: transfer war file from dev
    synchronize:
-    src: /usr/share/app-src/target/hello-1.0.war
-    dest: /var/lib/tomcat9/webapps/
-   delegate_to: devserver1
+    src: {{ src_folder }}/{{ src_file }}
+    dest: {{ dest_folder }}
+   delegate_to: {{ src_server }}
      
