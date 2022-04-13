@@ -8,10 +8,10 @@
 
  - name: Clone a github repository
    git:
-    repo: {{ app_repo }}
-    dest: {{ app_folder }}
+    repo: "{{ app_repo }}"
+    dest: "{{ app_folder }}"
     clone: yes
     update: yes
 
  - name: Maven package create
-   command: mvn -f {{ app_folder }}/pom.xml package -DskipTest
+   command: mvn -f "{{ app_folder }}"/pom.xml package -DskipTest
