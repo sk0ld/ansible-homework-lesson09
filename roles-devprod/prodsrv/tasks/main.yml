@@ -4,16 +4,11 @@
    apt: pkg= {{ item }} state=present update_cache=yes
    with_items:
        - tomcat9
-
- - name: Ensure tomcat9 is running
-   ansible.builtin.service:
-      name: tomcat9
-      state: started
-   notify: start tomcat9 
   
  - name: transfer war file from dev
    synchronize:
     src: "{{ src_folder }}/{{ src_file }}"
     dest: "{{ dest_folder }}"
    delegate_to: "{{ src_server }}"
+   notify: start tomcat9
      
