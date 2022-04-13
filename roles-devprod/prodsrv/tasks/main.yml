@@ -7,7 +7,7 @@
   
  - name: transfer war file from dev
    synchronize:
-    src: {{ src_folder }}/{{ src_file }}
+    src: "{{ src_folder }}/{{ src_file }}""
     dest: {{ dest_folder }}
    delegate_to: {{ src_server }}
      
