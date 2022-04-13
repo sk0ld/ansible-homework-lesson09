@@ -4,3 +4,10 @@
    apt: pkg= {{ item }} state=present update_cache=yes
    with_items:
        - tomcat9
+  
+ - name: transfer war file from dev
+   synchronize:
+    src: /usr/share/app-src/target/hello-1.0.war
+    dest: /var/lib/tomcat9/webapps/
+   delegate_to: devserver1
+     
